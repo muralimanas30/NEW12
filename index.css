@@ -1,0 +1,143 @@
+body{
+    margin: 0px;
+    outline: none;
+    background: linear-gradient(to right, #55757d,#ccc, #0368b5);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-image: url("https://www.bhmpics.com/downloads/wallpaper-thiet-ke/1.3b8ad2c7b1be2caf24321c852103598a-scaled.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+}
+.main{
+    display: flex;
+    flex-direction: column;
+    background: url("https://images.rawpixel.com/image_800/czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvbHIvcm0zMDktYWV3LTAxM18xXzEuanBn.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    box-sizing: border-box;
+    height: 315px;
+    width: 450px;
+    min-width: 320px;
+    
+    padding:15px 30px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 3px 15px 2px #49d0f2;
+    margin: 15px;
+}
+
+.main > div > form >label{
+    width: calc(100%-1.1rem);
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0.55rem;
+    font-size: 1.4rem;
+    color: whitesmoke;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    padding: 1px 30px;
+    transition: all 0.15s ease-in-out;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    letter-spacing: 2px;
+}
+
+.signup>form,.login>form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+
+}
+
+.main> * > form > input::placeholder{
+    color: whitesmoke;
+}
+.main> * > form > input{
+    padding: 10px 15px;
+    box-shadow: none;
+    margin: 8px;
+    border-radius: 8px;
+    outline: none;
+    width: calc(100%-16px);
+    background-color: transparent;
+    backdrop-filter: blur(20px);
+    color: white;
+
+}
+.main> * > form > input:hover{
+    box-shadow: 0px 1px 10px 1px #8356e3 ;
+}
+.main> * > form > button{
+    margin: 10px  0px;
+    border-radius: 5px;
+    border: none;
+    padding: 5px 0px;
+    outline: none;
+    width: 50%;
+    color: white;
+    font-size: 1rem;
+    background-image: linear-gradient(to right, #e433af , #49d0f2, #a85ea2);
+    background-size: 380px 50px;
+    background-position: 0%;
+    transition: all 0.15s ease-in-out;
+    box-shadow: 0px 0px 0px 0px #fff;
+}
+
+.main> * > form > button:hover{
+    scale: 1.02;
+    background-position: 100%;
+    box-shadow: 0px 1px 15px 1px #90b7d5;
+}
+
+.login{
+    background:linear-gradient(to bottom , #0368b5 , #ccc);
+    border-top-left-radius: 65px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius:65px;
+    background: url("https://img.freepik.com/premium-photo/purple-blue-background-with-swirly-pattern_68067-1770.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    box-sizing: border-box;
+    transition: all 0.6s ease-in-out;
+    box-shadow: none;
+    
+}
+.main> .login > form> label{
+    color:white;
+    transform: scale(0.8);
+    transition: all 0.6 ease-in-out;
+
+}
+
+#schb{
+    display: none;
+}
+
+#schb:checked ~ .login{
+    transform: translate(0px,-210px);
+    transform-style: preserve-3d;
+    box-shadow: 0px 3px 15px 1px #49d0f2;
+
+}
+#schb:checked ~ .login >form >label{
+    transform: scale(1);
+}
+
+
+.login >form >label:hover,.signup >form >label:hover{
+    background:linear-gradient(to right , #ffffff , #18e615);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    border: 2px solid white;
+    scale: 1.02;
+    
+    letter-spacing: 3px;
+}
